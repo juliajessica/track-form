@@ -11,12 +11,12 @@ $(document).ready(function(){
 
     results = who + what + where + when + why;
 
-    if (results === 5 && results >= 7) {
-      $(".user-output").append($(".c-sharp-result").show());
+    if (results === 5 && results <= 7) {
+      $(".user-output").prepend($(".c-sharp-result").show());
     } else if (results > 8 && results <=10) {
-      $(".user-output").append($(".react-css-result").show());
+      $(".user-output").prepend($(".react-css-result").show());
     } else if (results > 11) {
-      $(".user-output").append($(".java-android-result").show());
+      $(".user-output").prepend($(".java-android-result").show());
     }
   });
 });
