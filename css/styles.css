@@ -1,3 +1,7 @@
+body {
+  background-color: #cc9886;
+}
+
 .jumbotron {
   background-image: url("https://i.pinimg.com/564x/1a/bf/00/1abf000224e7ab12d932dc285b307a70.jpg");
 }
@@ -7,9 +11,15 @@ h1 {
   font-size: 60px;
 }
 
+#banner-text {
+  font-family: 'Bungee Hairline', cursive;
+  font-weight: bolder;
+}
+
 h5 {
   font-family: 'Bungee Hairline', cursive;
   font-weight: bolder;
+  text-shadow: 2px 2px #c4c0c0;
 }
 
 .c-sharp-result {
