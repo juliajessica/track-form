@@ -12,12 +12,12 @@
   </head>
   <body class="m-4">
     <div class="container-fluid">
-      <div class="jumbotron text-center">
+      <div class="jumbotron text-center form-group">
         <h1>Track Suggester</h1>
         <p id="banner-text">Discover which programming course pairs well with your lifestyle and personality. We offer four different courses that can help you develop the skills to read and code front-end or back-end or even both.</p>
       </div>
       <form id="coding-form">
-        <div class="question1">
+        <div class="question1 form-group">
           <h5 class="m-3">1. Who are you?</h5>
           <select class="form-control" id="input-q1">
             <option value="1" for="c-sharp">A natural gamer in their element - hey, don't judge!</option>
@@ -25,7 +25,7 @@
             <option value="3" for="java-android">Old school - with a pen and a crossword puzzle from the newspaper</option>
           </select>
         </div>
-        <div class="question2">
+        <div class="question2 form-group">
           <h5 class="m-3">2. What do you want to build?</h5>
           <select class="form-control" id="input-q2">
             <option value="1" for="c-sharp">Games</option>
@@ -33,7 +33,7 @@
             <option value="3" for="java-android">Apps</option>
           </select>
         </div>
-        <div class="question3">
+        <div class="question3 form-group">
           <h5 class="m-3">3. Where do you want to work?</h5>
           <select class="form-control" id="input-q3">
             <option value="1" for="c-sharp">IT or Security Agency</option>
@@ -41,7 +41,7 @@
             <option value="3" for="java-android">Corporate Company or Cyber Security</option>
           </select>
         </div>
-        <div class="question3">
+        <div class="question3 form-group">
           <h5 class="m-3">4. When you get frustrated, how do you handle it?</h5>
           <select class="form-control" id="input-q4">
             <option value="1" for="c-sharp">I never get in a pickle. I'm as calm as Buddah</option>
@@ -49,7 +49,7 @@
             <option value="3" for="java-android">I scratch my head and problem solve</option>
           </select>
         </div>
-        <div class="question3">
+        <div class="question3 form-group">
           <h5 class="m-3">5. Why are you interested in learning how to program?</h5>
           <select class="form-control" id="input-q5">
             <option value="1" for="c-sharp">Build something new and fun</option>
@@ -58,12 +58,13 @@
           </select>
         </div>
         </br>
-          <button class="btn btn-info form-control" type="submit">Let's get started!</button>
+          <button class="btn btn-info btn-block" type="submit">Let's get started!</button>
         </br>
       </form>
-      <div class="user-output">
+      <div id="user-output form-group">
         <div class="c-sharp-result">
           </br>
+          <button class="btn btn-primary reset-btn form-control btn btn-success" type="button" value="Refresh Page" onClick="window.location.reload()">Reset!</button>
           <h3>C#/.Net</h3>
           <img src="img/csharp.png" alt="csharp graphic" class="track-img-style">
           <h5 class="result-h5 m-3">Reasons to learn C#:</h5>
@@ -74,8 +75,9 @@
           </ul>
           </br>
         </div>
-        <div class="react-css-result">
+        <div class="react-css-result form-group">
           </br>
+          <button class="btn btn-primary reset-btn form-control btn btn-success" type="button" value="Refresh Page" onClick="window.location.reload()">Reset!</button>
           <h3>React/CSS</h3>
           <img src="img/css3-logo.png" alt="react/css graphic" class="track-img-style">
           <h5 class="result-h5 m-3">Reasons to learn React/CSS:</h5>
@@ -86,8 +88,9 @@
           </ul>
           </br>
         </div>
-        <div class="java-android-result">
+        <div class="java-android-result form-group">
           </br>
+          <button class="btn btn-primary reset-btn form-control btn btn-success" type="button" value="Refresh Page" onClick="window.location.reload()">Reset!</button>
           <h3>Java/Android</h3>
           <img src="img/java.png" alt="java graphic" class="track-img-style">
           <h5 class="result-h5 m-3">Reasons to learn Java/Android:</h5>
@@ -98,8 +101,6 @@
           </ul>
           </br>
         </div>
-        </br>
-        <!-- <button class="btn btn-primary reset-btn form-control btn btn-success" type="reset">Reset!</button> -->
       </div>
     </div>
   </body>

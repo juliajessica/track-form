@@ -13,20 +13,34 @@ $(document).ready(function(){
     var question4 = parseInt($("#input-q4").val());
     var question5 = parseInt($("#input-q5").val());
 
-    results = question1 + question2 + question3 + question4 + question5;
+    var results = question1 + question2 + question3 + question4 + question5;
 
 //backend logic
-    if (results === 5 && results <= 7) {
-      $(".user-output").prepend($(".c-sharp-result").show());
-    } else if (results > 8 && results <=10) {
-      $(".user-output").prepend($(".react-css-result").show());
-    } else if (results > 11) {
-      $(".user-output").prepend($(".java-android-result").show());
+    if (results <= 7) {
+      $("#user-output").hide();
+      $(".c-sharp-result").show();
+      console.log(results);
+      // alert('hi');
+
+      // $(".user-output").prepend($(".c-sharp-result").show());
+    } else if (results >= 8 && results <=10) {
+      $("#user-output").hide();
+      $(".react-css-result").show();
+      console.log(results);
+      // $(".user-output").prepend($(".react-css-result").show());
+
+    } else if (results === 11 || results >= 12) {
+      $("#user-output").hide();
+      $(".java-android-result").show();
+      console.log(results);
+
+      // $(".user-output").prepend($(".java-android-result").show());
+
     }
   });
 
   // $("button.reset-btn").click(function(){
-  //   // $(".user-output").reset();
+  //   $("this").reset();
   // });
 
 
