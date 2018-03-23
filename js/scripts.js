@@ -23,7 +23,16 @@ $(document).ready(function(){
     }
   });
 
-  $("button.reset-btn").click(function(){
-    $(".user-output").hide();
-  });
+  // function resetFunction(){
+  //   document.getElementById("#coding-form").reset();
+  // }
+
+    // $("button.reset-btn").click(function(){
+    // $("#reset-btn").click(function(){
+    //   $("#coding-form").trigger('reset')
+      // alert('hi');
+      // $("#coding-form")[0].reset();
+      // $(".user-output").hide();
+    // });
+
 });
