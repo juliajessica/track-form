@@ -1,6 +1,8 @@
 //frontend logic
-
 $(document).ready(function(){
+
+  // $prompt("What is your name?");
+
   $("form#coding-form").submit(function(event){
     event.preventDefault();
 
@@ -12,8 +14,8 @@ $(document).ready(function(){
     var question5 = parseInt($("#input-q5").val());
 
     results = question1 + question2 + question3 + question4 + question5;
-//backend logic
 
+//backend logic
     if (results === 5 && results <= 7) {
       $(".user-output").prepend($(".c-sharp-result").show());
     } else if (results > 8 && results <=10) {
@@ -23,16 +25,19 @@ $(document).ready(function(){
     }
   });
 
+  // $("button.reset-btn").click(function(){
+  //   // $(".user-output").reset();
+  // });
+
+
+  // $("#reset-btn").click(function(){
+  //   $("#coding-form").trigger('reset')
+    // alert('hi');
+    // $("#coding-form")[0].reset();
   // function resetFunction(){
   //   document.getElementById("#coding-form").reset();
   // }
 
-    // $("button.reset-btn").click(function(){
-    // $("#reset-btn").click(function(){
-    //   $("#coding-form").trigger('reset')
-      // alert('hi');
-      // $("#coding-form")[0].reset();
-      // $(".user-output").hide();
-    // });
+
 
 });

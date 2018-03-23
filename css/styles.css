@@ -35,14 +35,21 @@ h5 {
   font-weight: bolder;
   text-shadow: 2px 2px #c4c0c0;
   text-align: center;
+  font-size: 40px;
+}
+
+body {
+ font-family: 'Quicksand', sans-serif;
 }
 
 .track-img-style {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  height: 50%;
-  width: auto;
+  width:300px;
+  height:auto;
+  /*height: 30%;
+  width: auto;*/
 }
 
 .c-sharp-result {
