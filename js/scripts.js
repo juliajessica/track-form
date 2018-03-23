@@ -29,7 +29,7 @@ $(document).ready(function(){
       console.log(results);
       // $(".user-output").prepend($(".react-css-result").show());
 
-    } else if (results === 11 || results >= 12) {
+    } else if (results === 11 || results <= 15) {
       $("#user-output").hide();
       $(".java-android-result").show();
       console.log(results);
