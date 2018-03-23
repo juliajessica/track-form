@@ -11,9 +11,12 @@ $(document).ready(function(){
 
     results = who + what + where + when + why;
 
-    if ()
-
+    if (results === 5 && results >= 7) {
+      $(".user-output").append($(".c-sharp-result").show());
+    } else if (results > 8 && results <=10) {
+      $(".user-output").append($(".react-css-result").show());
+    } else if (results > 11) {
+      $(".user-output").append($(".java-android-result").show());
+    }
   });
-
-
 });
