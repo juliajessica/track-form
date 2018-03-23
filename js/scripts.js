@@ -1,3 +1,5 @@
+//frontend logic
+
 $(document).ready(function(){
   $("form#coding-form").submit(function(event){
     event.preventDefault();
@@ -10,6 +12,7 @@ $(document).ready(function(){
     var why = parseInt($("#why").val());
 
     results = who + what + where + when + why;
+//backend logic
 
     if (results === 5 && results <= 7) {
       $(".user-output").prepend($(".c-sharp-result").show());
@@ -18,5 +21,9 @@ $(document).ready(function(){
     } else if (results > 11) {
       $(".user-output").prepend($(".java-android-result").show());
     }
+  });
+
+  $("button.reset-btn").click(function(){
+    $(".user-output").hide();
   });
 });
