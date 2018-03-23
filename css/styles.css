@@ -1,5 +1,6 @@
 body {
   background-color: #cc9886;
+  padding: 10px;
 }
 
 .jumbotron {
@@ -16,6 +17,13 @@ h1 {
   font-weight: bolder;
 }
 
+h3 {
+  font-family: 'Bungee Outline', cursive;
+  text-align: center;
+  font-size: 60px;
+  font-weight: bolder;
+}
+
 h5 {
   font-family: 'Bungee Hairline', cursive;
   font-weight: bolder;
@@ -26,7 +34,8 @@ h5 {
   display: block;
   margin-left: auto;
   margin-right: auto;
-
+  height: 50%;
+  width: auto;
 }
 
 .c-sharp-result {
