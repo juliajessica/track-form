@@ -5,13 +5,13 @@ $(document).ready(function(){
     event.preventDefault();
 
     var results = 0;
-    var who = parseInt($("#who").val());
-    var what = parseInt($("#what").val());
-    var where = parseInt($("#where").val());
-    var when = parseInt($("#when").val());
-    var why = parseInt($("#why").val());
+    var question1 = parseInt($("#input-q1").val());
+    var question2 = parseInt($("#input-q2").val());
+    var question3 = parseInt($("#input-q3").val());
+    var question4 = parseInt($("#input-q4").val());
+    var question5 = parseInt($("#input-q5").val());
 
-    results = who + what + where + when + why;
+    results = question1 + question2 + question3 + question4 + question5;
 //backend logic
 
     if (results === 5 && results <= 7) {
