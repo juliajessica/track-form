@@ -17,12 +17,11 @@ $(document).ready(function(){
     if (results <= 7) {
       // $("#user-output").hide();
       // $(".c-sharp-result").show();
-      // console.log(results);
+      console.log(results);
       // // alert('hi');
       $(".user-name").text(userName);
       $(".user-output").prepend($(".c-sharp-result").show());
       // $(".user-name").text(name);
-
       // alert('hi');
       // debugger;
 
@@ -30,18 +29,17 @@ $(document).ready(function(){
       // $prompt(name + "you should take...");
       // $("#user-output").hide();
       // $(".react-css-result").show();
-      // console.log(results);
+      debugger;
+      console.log(results);
       $(".user-name").text(userName);
       $(".user-output").prepend($(".react-css-result").show());
 
     } else if (results >= 11 && results <= 15) {
       // $("#user-output").hide();
       // $(".java-android-result").show();
-      // console.log(results);
+      console.log(results);
       $(".user-name").text(userName);
       $(".user-output").prepend($(".java-android-result").show());
     }
-
   });
-
 });
