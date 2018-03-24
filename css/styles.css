@@ -42,10 +42,6 @@ body {
  font-family: 'Quicksand', sans-serif;
 }
 
-.post-card {
-  display: none;
-}
-
 .track-img-style {
   display: block;
   margin-left: auto;

@@ -14,14 +14,10 @@
     <div class="container-fluid">
       <div class="jumbotron text-center form-group">
         <h1>Track Suggester</h1>
-        <div class="form-group">
-          <input type="text" class="form-control" id="name" aria-describedby="emailHelp" placeholder="Enter your name">
-        </div>
-        <button type="submit" class="btn btn-outline-primary my-4 btn-lg" value="name-btn">Submit</button>
-               </form>
         <p id="banner-text">Discover which programming course pairs well with your lifestyle and personality. We offer four different courses that can help you develop the skills to read and code front-end or back-end or even both.</p>
       </div>
       <form id="coding-form">
+        <input type="text" class="form-control" id="name" placeholder="Enter your name" type="text" aria-describedby="inputError2Status">
         <div class="question1 form-group">
           <h5 class="m-3">1. Who are you?</h5>
           <select class="form-control" id="input-q1">
@@ -63,16 +59,16 @@
           </select>
         </div>
         </br>
-          <button class="btn btn-info btn-block" type="submit">Let's get started!</button>
+          <button class="btn btn-outline-primary btn-block" type="submit">Let's get started!</button>
         </br>
       </form>
       <div id="user-output form-group">
         <div class="c-sharp-result">
           </br>
-          <button class="btn btn-primary reset-btn form-control btn btn-success" type="button" value="Refresh Page" onClick="window.location.reload()">Reset!</button>
+          <button class="btn btn-primary reset-btn form-control btn btn-outline-success" type="button" value="Refresh Page" onClick="window.location.reload()">Reset!</button>
           <h3>C#/.Net</h3>
           <img src="img/csharp.png" alt="csharp graphic" class="track-img-style">
-          <h5 class="result-h5 m-3"><span class="post-card"></span>, Reasons to learn C#:</h5>
+          <h5 class="result-h5 m-3"><span class="user-name"></span>, here are three reasons to learn C#:</h5>
           <ul>
             <li>C# is well-designed and well-implemented. From generics to asynchronous support, from LINQ to tuples, C# thoughtfully incorporates the latest thinking in programming languages without overloading the syntax with weird bits and clumsy hacks.</li>
             <li>C# is extremely productive and versatile for creating any type of application. From mobile apps running on Android and iOS, to web sites and services running in the cloud, C# is a tool that is dexterous enough to be used for a variety of projects.</li>
@@ -85,7 +81,7 @@
           <button class="btn btn-primary reset-btn form-control btn btn-success" type="button" value="Refresh Page" onClick="window.location.reload()">Reset!</button>
           <h3>React/CSS</h3>
           <img src="img/css3-logo.png" alt="react/css graphic" class="track-img-style">
-          <h5 class="result-h5 m-3">Reasons to learn React/CSS:</h5>
+          <h5 class="result-h5 m-3"><span class="user-name"></span>, here are three reasons to learn React/CSS:</h5>
           <ul>
             <li>Used to produce web applications, native mobile apps, command line interfaces, avionics and much more.</li>
             <li>React is one of the most popular JavaScript frameworks and cementing its leading position with its rapid growth.</li>
@@ -98,7 +94,7 @@
           <button class="btn btn-primary reset-btn form-control btn btn-success" type="button" value="Refresh Page" onClick="window.location.reload()">Reset!</button>
           <h3>Java/Android</h3>
           <img src="img/java.png" alt="java graphic" class="track-img-style">
-          <h5 class="result-h5 m-3">Reasons to learn Java/Android:</h5>
+          <h5 class="result-h5 m-3"><span class="user-name"></span>, here are three reasons to learn Java/Android:</h5>
           <ul>
             <li>Object Oriented and easy-to-use, which means your code will have to be checked for errors before it can be built into an app. This means errors will be easier to track down. You will have less strange and unexpected errors, which means your codebase will be easier to maintain as it grows in size and complexity.</li>
             <li>Used for cross platform development.</li>
