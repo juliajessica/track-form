@@ -15,31 +15,26 @@ $(document).ready(function(){
 
 //backend logic
     if (results <= 7) {
-      // $("#user-output").hide();
-      // $(".c-sharp-result").show();
-      console.log(results);
-      // // alert('hi');
+      $("#user-output").hide();
+      $(".c-sharp-result").show();
       $(".user-name").text(userName);
-      $(".user-output").prepend($(".c-sharp-result").show());
-      // $(".user-name").text(name);
-      // alert('hi');
+      // console.log(results);
+      // $(".user-output").prepend($(".c-sharp-result").show());
       // debugger;
 
     } else if (results >= 8 && results <=10) {
-      // $prompt(name + "you should take...");
-      // $("#user-output").hide();
-      // $(".react-css-result").show();
-      debugger;
-      console.log(results);
+      $("#user-output").hide();
+      $(".react-css-result").show();
       $(".user-name").text(userName);
-      $(".user-output").prepend($(".react-css-result").show());
+      // console.log(results);
+      // $(".user-output").prepend($(".react-css-result").show());
 
     } else if (results >= 11 && results <= 15) {
-      // $("#user-output").hide();
-      // $(".java-android-result").show();
-      console.log(results);
+      $("#user-output").hide();
+      $(".java-android-result").show();
       $(".user-name").text(userName);
-      $(".user-output").prepend($(".java-android-result").show());
+      // $(".user-output").prepend($(".java-android-result").show());
+      // console.log(results);
     }
   });
 });
