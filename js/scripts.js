@@ -31,12 +31,14 @@ $(document).ready(function(){
       // $("#user-output").hide();
       // $(".react-css-result").show();
       // console.log(results);
+      $(".user-name").text(userName);
       $(".user-output").prepend($(".react-css-result").show());
 
     } else if (results >= 11 && results <= 15) {
       // $("#user-output").hide();
       // $(".java-android-result").show();
       // console.log(results);
+      $(".user-name").text(userName);
       $(".user-output").prepend($(".java-android-result").show());
     }
 
