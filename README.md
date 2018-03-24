@@ -2,13 +2,13 @@
 
 #### _Assignment for Epicodus_
 
-#### By _**Julia Sheremet**_
+#### By: _**Julia Sheremet**_
 
 ## Description
 
-_This webpage is designed to help potential developers/students decide which track they'd like to pursue before they enroll into a coding school. The purpose of this survey is to help students gain more of an understanding on which track would suit them best.
+_This webpage is designed to help potential developers/students decide which track they'd like to pursue before they enroll into a coding school. The purpose of this survey is to help students gain more of an understanding on which track would suit them best._
 
-There are so many different languages and tracks to choose from. This small survey will hopefully open a new door of opportunities for future internships, jobs, and learning opportunities._
+_There are so many different languages and tracks to choose from. This small survey will hopefully open a new door of opportunities for future internships, jobs, and learning opportunities._
 
 ## Setup/Installation Requirements
 
