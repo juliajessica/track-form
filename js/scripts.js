@@ -14,27 +14,21 @@ $(document).ready(function(){
     var results = question1 + question2 + question3 + question4 + question5;
 
 //backend logic
+
+$(".c-sharp-result").hide();
+$(".react-css-result").hide();
+$(".java-android-result").hide();
     if (results <= 7) {
-      $("#user-output").hide();
       $(".c-sharp-result").show();
+      $(".user-name").text(userName);
+    } else if (results >= 8 && results <=10) {
+      $(".react-css-result").show();
+      $(".user-name").text(userName);
+    } else if (results >= 11 && results <= 15) {
+      $(".java-android-result").show();
       $(".user-name").text(userName);
       // console.log(results);
       // $(".user-output").prepend($(".c-sharp-result").show());
-      // debugger;
-
-    } else if (results >= 8 && results <=10) {
-      $("#user-output").hide();
-      $(".react-css-result").show();
-      $(".user-name").text(userName);
-      // console.log(results);
-      // $(".user-output").prepend($(".react-css-result").show());
-
-    } else if (results >= 11 && results <= 15) {
-      $("#user-output").hide();
-      $(".java-android-result").show();
-      $(".user-name").text(userName);
-      // $(".user-output").prepend($(".java-android-result").show());
-      // console.log(results);
     }
   });
 });
