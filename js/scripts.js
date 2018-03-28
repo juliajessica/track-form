@@ -1,4 +1,7 @@
 //frontend logic
+
+var counter = 0;
+
 $(document).ready(function(){
   $("form#coding-form").submit(function(event){
     event.preventDefault();
@@ -11,13 +14,19 @@ $(document).ready(function(){
     var question5 = parseInt($("#input-q5").val());
     var userName = $("input#name").val();
 
+
     var results = question1 + question2 + question3 + question4 + question5;
 
 //backend logic
-  $("form#coding-form").hide();
-  $(".c-sharp-result").hide();
-  $(".react-css-result").hide();
-  $(".java-android-result").hide();
+ // $("#coding-form").hide();
+ counter = counter + 1;
+ $(".question1").show();
+
+  // $(".c-sharp-result").hide();
+  // $(".react-css-result").hide();
+  // $(".java-android-result").hide();
+
+  if (counter >=5) {
     if (results <= 7) {
       $(".c-sharp-result").show();
       $(".user-name").text(userName);
@@ -30,5 +39,6 @@ $(document).ready(function(){
       // console.log(results);
       // $(".user-output").prepend($(".c-sharp-result").show());
     }
+  }
   });
 });
