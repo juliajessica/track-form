@@ -14,10 +14,10 @@ $(document).ready(function(){
     var results = question1 + question2 + question3 + question4 + question5;
 
 //backend logic
-
-$(".c-sharp-result").hide();
-$(".react-css-result").hide();
-$(".java-android-result").hide();
+  $("form#coding-form").hide();
+  $(".c-sharp-result").hide();
+  $(".react-css-result").hide();
+  $(".java-android-result").hide();
     if (results <= 7) {
       $(".c-sharp-result").show();
       $(".user-name").text(userName);
