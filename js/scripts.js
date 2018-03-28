@@ -19,14 +19,22 @@ $(document).ready(function(){
 
 //backend logic
  // $("#coding-form").hide();
+ $(".c-sharp-result").hide();
+ $(".react-css-result").hide();
+ $(".java-android-result").hide();
+ 
  counter = counter + 1;
- $(".question1").show();
-
-  // $(".c-sharp-result").hide();
-  // $(".react-css-result").hide();
-  // $(".java-android-result").hide();
-
-  if (counter >=5) {
+  if (counter === 1) {
+    $(".question1").show();
+  } else if (counter === 2) {
+    $(".question2").show();
+  } else if (counter === 3) {
+    $(".question3").show();
+  } else if (counter === 4) {
+    debugger;
+    $(".question4").show();
+  } else if (counter >=5) {
+    $(".question5").show();
     if (results <= 7) {
       $(".c-sharp-result").show();
       $(".user-name").text(userName);
